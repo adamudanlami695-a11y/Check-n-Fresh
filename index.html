@@ -687,16 +687,15 @@ and amazing results.
 
 <h2 class="section-title">Book Appointment</h2>
 
-<form class="booking-form">
 
 <form class="booking-form" id="bookingForm">
 
     <input type="text" id="name" placeholder="Full Name" required>
 
-    <input type="tel" id="phoe" placeholder="Phone Number" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
 
     <select id="service" required>
-        <option value="">Select Services</option>
+        <option value="">Select Service</option>
         <option>Hair Styling</option>
         <option>Beauty Care</option>
         <option>Nail Studio</option>
@@ -764,7 +763,7 @@ WhatsApp
 <script>
 
     document.getElementById("bookingForm")
-    .addEventListener("Submit", function(e){
+    .addEventListener("submit", function(e){
 
         e.preventDefault();
 
@@ -775,7 +774,7 @@ WhatsApp
         document.getElementById("phone").value;
 
         let service =
-        document.getElementById("services").value;
+        document.getElementById("service").value;
 
         let message =
         document.getElementById("message").value;
